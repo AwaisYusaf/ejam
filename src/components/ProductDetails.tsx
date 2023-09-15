@@ -62,7 +62,7 @@ function ProductDetails({ }: Props) {
                 <DetailsOverview />
                 {
                     features.map((feature: any, index: number) => {
-                        return <div className='flex items-center space-x-2 mt-2'>
+                        return <div className='flex items-center space-x-2 mt-2' key={index}>
                             <Image className='w-auto h-5' src='/assets/blue-tick.png' width={500} height={500} alt="-" />
                             {feature.content}
                         </div>
