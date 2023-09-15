@@ -11,26 +11,26 @@ function Step({ iconSrc, title, status, number }: { iconSrc?: string, title?: st
             :
             <p className={`w-7 h-7 text-center text-sm flex items-center justify-center rounded-full border-2 border-blue-600 ${status === "Active" ? "bg-blue-600 text-white" : "text-blue-600 bg-white"} font-semibold`}>{number}</p>
         }
-        <p className='font-medium'>{title}</p>
+        <p className='font-medium lg:text-base text-sm'><span className='lg:inline hidden'>Step {number} : </span>{title}</p>
     </div>
 }
 
 
 const steps = [
     {
-        title: 'Step 1 : Cart Review',
+        title: 'Cart Review',
         status: 'Completed'
     },
     {
-        title: 'Step 2 : Checkout',
+        title: 'Checkout',
         status: 'Completed'
     },
     {
-        title: 'Step 3 : Special Offer',
+        title: 'Special Offer',
         status: 'Active'
     },
     {
-        title: 'Step 4 : Confirmation',
+        title: 'Confirmation',
         status: 'Pending'
     },
 
